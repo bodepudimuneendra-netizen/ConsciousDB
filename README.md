@@ -1,4 +1,4 @@
-# laya-jev-GraphRAG
+# ConsciousDB
 
 ![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-CUDA-EE4C2C.svg)
@@ -6,7 +6,7 @@
 ![Databases](https://img.shields.io/badge/DB-Neo4j%20%7C%20Memgraph%20%7C%20AGE%20%7C%20Kùzu-018bff.svg)
 ![Backend](https://img.shields.io/badge/AI%20Backend-Laya%20%7C%20Jev%20%7C%20Ablation-blueviolet.svg)
 
-**laya-jev-GraphRAG** is a **graph-database-agnostic Agentic GraphRAG framework** — a production-ready intelligence layer you drop on top of your existing graph database to make it fully agentic. It doesn't replace your graph DB; it gives it a brain.
+**ConsciousDB** is a **graph-database-agnostic Agentic GraphRAG framework** — a production-ready intelligence layer you drop on top of your existing graph database to make it fully agentic. It doesn't replace your graph DB; it gives it a brain.
 
 Instead of hard-wiring GraphRAG logic to a single database, this framework **completely decouples the AI decision layer from the storage layer**. The same complete **4-phase pipeline** (Ingestion → Pre-Retrieval → Traversal → Post-Retrieval) and evaluation runs identically across Neo4j, Memgraph, Apache AGE, and Kùzu — switched with one environment variable.
 
@@ -183,8 +183,8 @@ All four graph DB backends implement the same `BaseGraphClient` interface. **Zer
 ### Installation
 
 ```bash
-git clone https://github.com/bodepudimuneendra-netizen/laya-jev-GraphRAG.git
-cd laya-jev-GraphRAG/graphrag_neo4j_laya
+git clone https://github.com/bodepudimuneendra-netizen/ConsciousDB.git
+cd ConsciousDB/graphrag_neo4j_laya
 
 # Install PyTorch with CUDA 12.4 first (for your GPU)
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
